@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+   <div class="header"><h1>Crud System</h1></div>
+   
+   <div class="form">
+    <label for="productNameInput"ProductName>ProductName</label>
+    <input id="productNameInput" type="text">
+
+    <label for="productCategoryInput">ProductCategory</label>
+    <input id="productCategoryInput" type="text">
+
+    <label for="productPriceInput">ProductPrice</label>
+    <input id="productPriceInput" type="text">
+
+    <label for="productDiscountInput">ProductDiscount</label>
+    <input id="productDiscountInput" type="text">
+
+    <label for="productQuantityInput">ProductQuantity</label>
+    <input id="productQuantityInput" type="text">
+
+    <label for="productDescriptionInput">ProductDescription</label>
+    <input id="productDescriptionInput" type="text" >
+
+    <button class = 'add' onclick="addProduct()" class="btn bg-success  fw-bold" id="addBtn" >Add Product</button>
+    <input type="search" placeholder="search"  id="searchId"
+    classname="search">
+
+    
+
+    
+   </div>
+   
+   
+
+   <section>
+    <div>
+        
+        <table >
+            <thead>
+                <tr>
+
+                    <th>Name </th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Disconut</th>
+                    <th>Quantity</th>
+                    <th>Description</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="showData">
+
+            
+                
+            </tbody>
+            
+        </table>
+    </div>
+</section>
+</table></div>
+<script src="crud.js" defer></script>
+</body>
+</html>
